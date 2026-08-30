@@ -26,7 +26,9 @@
     <h1>Support</h1>
     <div class="meta">Last updated: May 11, 2026</div>
 
-    <p>If you need help with PrivateClaw or any other Indiagram product, the fastest path is email. We read every message and reply personally.</p>
+    <p>If you need help with an Indiagram app, the fastest path is email. We read every message and reply personally.</p>
+
+    <p>This page covers <strong>PrivateClaw</strong> and <strong>Tunnelless</strong>.</p>
 
     <div class="contact-block">
       <div class="label">Email</div>
@@ -38,17 +40,28 @@
     <h2>What to include</h2>
     <p>To help us help you faster, please include:</p>
     <ul>
-      <li>The product and version you're using (e.g. PrivateClaw iOS 0.0.1+22, macOS 0.0.1+22)</li>
-      <li>The device and OS version (e.g. iPhone 15 Pro on iOS 18.4, MacBook Pro on macOS 15.3)</li>
+      <li>The app and version you're using (e.g. Tunnelless macOS 0.1.0, PrivateClaw iOS 0.0.1+22)</li>
+      <li>The device and OS version (e.g. iPhone 15 Pro on iOS 18.4, MacBook Air M3 on macOS 26.6)</li>
       <li>A short description of what you were trying to do and what happened instead</li>
       <li>Any error messages — screenshots are welcome</li>
     </ul>
 
+    <h2>Tunnelless</h2>
+    <p>Tunnelless joins a <a href="https://tailscale.com">Tailscale</a> network from inside the app itself &mdash; there is no VPN profile to install and no separate Tailscale app to download.</p>
+    <ul>
+      <li><strong>Signing in.</strong> Press <em>Connect</em>. The app opens Tailscale's sign-in page in a sheet and returns you to the app automatically once the device joins. You need a Tailscale account; signing in happens on Tailscale's own page, not ours.</li>
+      <li><strong>Trying it without an account.</strong> Press <em>Demo mode</em> to see the interface with sample data, with no sign-in and no network access.</li>
+      <li><strong>If sign-in does not open.</strong> The app shows the reason on screen. Press <em>Connect</em> again, and if it persists, email us that message &mdash; it names the cause.</li>
+      <li><strong>Starting over.</strong> <em>Sign out &amp; reset</em> clears the local device registration. To remove the device from your tailnet, and to delete a Tailscale account, use the <a href="https://login.tailscale.com/admin/machines">Tailscale admin console</a> &mdash; that data lives with Tailscale, not with us.</li>
+    </ul>
+
     <h2>TestFlight beta feedback</h2>
-    <p>If you're testing PrivateClaw via TestFlight, the in-app <em>"Send Beta Feedback"</em> option (long-press the app icon or shake the device) routes your report to us with diagnostic information attached. That's the preferred channel for beta bug reports.</p>
+    <p>If you're testing an Indiagram app via TestFlight, the in-app <em>"Send Beta Feedback"</em> option (long-press the app icon or shake the device) routes your report to us with diagnostic information attached. That's the preferred channel for beta bug reports.</p>
 
     <h2>Privacy and data</h2>
-    <p>PrivateClaw is designed so that your API keys, prompts, and conversation data stay on infrastructure you control. We don't have access to that data and can't recover it on your behalf. See our <a href="/privacy.html">Privacy Policy</a> for details on what we do and don't collect.</p>
+    <p>PrivateClaw is designed so that your API keys, prompts, and conversation data stay on infrastructure you control. We don't have access to that data and can't recover it on your behalf.</p>
+    <p>Tunnelless connects your device to your own Tailscale network. Your account, your devices and your traffic are between you and Tailscale &mdash; we operate no server in that path and hold none of it.</p>
+    <p>See our <a href="/privacy.html">Privacy Policy</a> for details on what we do and don't collect.</p>
 
     <h2>Business inquiries</h2>
     <p>For partnerships, press, or other non-support questions, use the same email and include "Business" in the subject line.</p>
