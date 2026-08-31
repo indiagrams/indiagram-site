@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indiagram LLC — PrivateClaw and Tunnelless</title>
-  <meta name="description" content="Indiagram LLC builds PrivateClaw, a self-hosted AI gateway, and Tunnelless, which joins a Tailscale network from inside the app itself.">
+  <title>Tunnelless — Indiagram LLC</title>
+  <meta name="description" content="Tunnelless joins a Tailscale network from inside the app itself — no VPN profile, no separate Tailscale app, no system extension.">
   <style>
     :root {
       --fg: #111;
@@ -57,51 +57,54 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">INDIAGRAM LLC</div>
-      <h1>Your AI, on your infrastructure.</h1>
-      <p class="tagline">Indiagram builds <strong>PrivateClaw</strong> — a self-hosted AI gateway that keeps your keys, prompts, and data on a server you own — and <strong>Tunnelless</strong>, which joins a Tailscale network from inside the app itself.</p>
+      <div class="brand"><a href="/">INDIAGRAM LLC</a></div>
+      <h1>Tunnelless</h1>
+      <p class="tagline">Join a Tailscale network from inside the app itself &mdash; no VPN profile, no separate Tailscale app, no system extension.</p>
+      <p><a href="https://apps.apple.com/us/app/tunnelless/id6805551069?mt=12">Download on the Mac App Store</a></p>
     </header>
 
     <section>
-      <h2>What PrivateClaw does</h2>
-      <p>PrivateClaw provisions a small cloud server (Hetzner, DigitalOcean, or Vultr) that acts as a private gateway for your AI tools. Your API keys and traffic stay on hardware you control instead of a third-party SaaS.</p>
+      <h2>What it does</h2>
+      <p>Most apps reach a private network by asking the operating system for a VPN tunnel. Tunnelless doesn't. It runs a Tailscale node <em>in its own process</em>, so joining your tailnet installs no VPN profile, changes no system routing, and affects no other app on the device.</p>
       <ul>
-        <li>Bring-your-own cloud provider — no vendor lock-in</li>
-        <li>API keys live on your VPS, never shared with a middleman</li>
-        <li>Native iOS and macOS apps for one-tap provisioning and pairing</li>
-        <li>Tailscale-based private networking between your device and your server</li>
+        <li>Browse the devices on your tailnet, with connection details for each</li>
+        <li>Reach services on your own machines through a local SOCKS5 proxy</li>
+        <li>Sign in with your existing Tailscale account &mdash; on Tailscale's own site</li>
+        <li>Demo mode to look around with sample data, no account required</li>
       </ul>
     </section>
 
     <section>
-      <h2>Tunnelless</h2>
-      <p>Most apps reach a private network by asking the operating system for a VPN tunnel. <strong>Tunnelless</strong> doesn't — it runs a Tailscale node in its own process, so joining your tailnet installs no VPN profile, changes no system routing, and affects no other app on the device.</p>
-      <p>Browse the devices on your tailnet and reach services on your own machines through a local SOCKS5 proxy. It collects nothing, and Indiagram operates no server it talks to.</p>
-      <p><a href="/tunnelless.html">About Tunnelless</a> &nbsp;&middot;&nbsp; <a href="https://apps.apple.com/us/app/tunnelless/id6805551069?mt=12">Mac App Store</a> &nbsp;&middot;&nbsp; <a href="https://github.com/indiagrams/tunnelless">Source</a></p>
+      <h2>Why it's built this way</h2>
+      <p>A VPN profile is a device-wide change: it needs elevated permission, it can conflict with other VPN software, and it routes traffic for everything, not just the app that asked. Running the node in-process keeps the blast radius to a single app. Nothing outside Tunnelless is touched.</p>
     </section>
 
     <section>
-      <h2>Who it's for</h2>
-      <p>Developers, small teams, and privacy-conscious users who want the ergonomics of hosted AI gateways without handing over credentials or conversation history.</p>
+      <h2>Privacy</h2>
+      <p>Tunnelless collects nothing. There is no analytics, no crash reporter, no advertising identifier, and no account system of our own &mdash; and Indiagram operates no server the app talks to. Your account, your devices and your traffic are between you and Tailscale. See the <a href="/privacy.html">Privacy Policy</a>.</p>
     </section>
 
     <section>
-      <h2>Status</h2>
-      <p>PrivateClaw is currently in TestFlight beta. A public release is planned for 2026. For access or questions, get in touch.</p>
+      <h2>Open source</h2>
+      <p>Tunnelless is also a reference implementation: the source is public, including the release engineering and the upstream fixes it produced along the way. <a href="https://github.com/indiagrams/tunnelless">github.com/indiagrams/tunnelless</a></p>
     </section>
 
     <section>
-      <h2>Contact</h2>
+      <h2>Requirements</h2>
+      <p>macOS 14 or later. A Tailscale account is needed to connect; Demo mode is not.</p>
+    </section>
+
+    <section>
+      <h2>Support</h2>
       <div class="contact">
+        <div><a href="/support.html">Support and troubleshooting</a></div>
         <div><a href="mailto:contact@indiagram.com">contact@indiagram.com</a></div>
-        <div>San Jose, California, USA</div>
       </div>
     </section>
 
     <footer>
       <div>&copy; 2026 Indiagram LLC. All rights reserved.</div>
       <div>
-        <a href="/tunnelless.html">Tunnelless</a> &nbsp;&middot;&nbsp;
         <a href="/privacy.html">Privacy</a> &nbsp;&middot;&nbsp;
         <a href="/support.html">Support</a> &nbsp;&middot;&nbsp;
         <a href="/terms.html">Terms</a>
